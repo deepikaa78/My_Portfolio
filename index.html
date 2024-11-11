@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Portfolio.hu_full_logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header"><b><i>Home</i></b></a></li>
+            <li><a href="#about"><b><i>About</i></b></a></li>
+            <li><a href="#services"><b><i>Services</i></b></a></li>
+            <li><a href="#portfolio"><b><i>Portfolio</i></b></a></li>
+            <li><a href="#contact"><b><i>Contact</i></b></a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        <p><b><h3>UI/UX Designer</h3></b></p>
+        <h2>Hi, I'm <span>Deepika</span> from India</h2>
+        <h2>Designers are the bridge between the user and the product, making sure that the experience is as smooth, engaging, and intuitive as possible. They ensure that functionality meets aesthetic appeal, creating products that people not only use but enjoy using.</h2>
+    </div>
+    </div>
+   </div>
+   <!--------------about------------->
+   <div id="about">
+    <div class="container">
+       <div class="row">
+           <div class="about-col-1">
+                <img src="https://img.pikbest.com/origin/10/51/48/62YpIkbEsTJnk.jpg!w700wp" alt="">
+           </div>
+           <div class="about-col-2">
+               <h1 class="sub-title"><i><b>About me:</b></i></h1>
+               <p class="para">Passionate Front-End Developer and Software Engineer with
+                 a solid foundation in computer science graduated in 2024. Hands-on experience
+                  through diverse projects and internships. Proficient in the programming language JAVA 
+                  and familiar with software development methodologies, version control systems, 
+                  and debugging techniques. Demonstrates excellent problem-solving skills and 
+                  a keen ability to learn and adapt to new technologies quickly.Quick to learn new 
+                  technologies and thrive in fast-paced, collaborative environments.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event,'skills')"><b>Skills:</b></p>
+                    <p class="tab-links" onclick="opentab(event,'experience')"><b>Experience:</b></p>
+                    <p class="tab-links" onclick="opentab(event,'eduaction')"><b>Education:</b></p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Proficient</span><br>JAVA	Familiar: OOPS, Maven, Data structure, SQL, DBMS, Git,Springboot.</li>
+                        <li><span>Wed Development</span><br>HTML5, CSS3, Java script,Tailwind CSS,Reactjs.</li>
+                        <li><span>Others</span><br>Problem Solving, Excellent Communication, Team-collaboration, Adaptive.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>07/10/2024-Current</span><br>Junior Software Engineer intern.</li>
+                        <li><span>02/08/2023-02/09/2023</span><br>Intern.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="eduaction">
+                    <ul>
+                        <li><span>2024</span><br>Bachelor of Engineering Specialization with Information Science in MCE,Hassan.</li>
+                        <li><span>2020</span><br>PUC in Bhadravathi.</li>
+                        <li><span>2018</span><br>High School in Bhadravathi.</li>
+                    </ul>
+                </div>
+        </div>
+       </div> 
+    </div>
+   </div>
+   <!--------------services------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title"><i><b>My Services:</b></i></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Our web design services are dedicated to creating visually stunning and 
+                    highly functional websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Our web design services are dedicated to creating visually stunning and 
+                    highly functional websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Our web design services are dedicated to creating visually stunning and 
+                    highly functional websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-----------------------Portfolio------------------------>
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><i><b>My Work:</b></i></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://images.unsplash.com/photo-1479476437642-f85d89e5ad7b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="layer">
+                    <h3>Dehazing Foogy Images</h3>
+                    <p>The project focused on image processing techniques
+                         to enhance the visibility of foggy images. 
+                         The objective was to remove haze from images using 
+                         the Dark Channel Prior (DCP) method, improving image 
+                         clarity for better analysis and usability in various
+                          applications like autonomous driving and surveillance systems.</p>
+                        <a href="https://ibb.co/WxrgQdt"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://t4.ftcdn.net/jpg/05/56/16/81/360_F_556168144_qEINHd6qUsQH4b6wDvgOS0WtuShVwJVm.jpg">
+                <div class="layer">
+                    <h3>Rockect fueling launching count down Website</h3>
+                    <p>This project is a simple and customizable countdown
+                         timer designed to build anticipation for an event or product launch. 
+                         Users can watch the timer count down in real-time, enhancing 
+                         the user experience and excitement for the upcoming release.</p>
+                        <a href="https://deepikaa78.github.io/Orbit_Aid/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/011/635/825/small_2x/abstract-square-interface-modern-background-concept-fingerprint-digital-scanning-visual-security-system-authentication-login-vector.jpg">
+                <div class="layer">
+                    <h3>Login page</h3>
+                    <p>A login page is a user interface screen 
+                        that allows users to access a website, application, 
+                        or system by entering their credentials, typically a username (or email) and password. 
+                        This page is essential for verifying and authenticating users, ensuring that only authorized 
+                        individuals can gain access to restricted content or personalized information.</p>
+                        <a href="https://deepikaa78.github.io/login_page_deploy/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href=" https://bthnl.com/volume-24-issue-5 2024/" class="btn">Know more</a>
+    </div>
+   </div>
+   <!-----------------------Contact-------------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"><i><b>Contact Me:</b></i></h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>    
+                </div>
+                <a href="https://ibb.co/VDcmzg1" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" action="Connect.php" method="post">
+            <input type="text" name="Name" placeholder="Your Name" required> 
+            <input type="email" name="Email" placeholder="Your Email" required>  
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+      <div class="copyright">
+         <p>Copyright &copy; kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+      </div>
+   </div>
+</div> 
+<script src="index.js" ></script>
+</body>
+</html>
